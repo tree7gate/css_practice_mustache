@@ -1,0 +1,113 @@
+/* imports all styles from eyes.css, can be overwritten by modifying that style */
+@import "eyes.css";
+/* @import
+url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"); */
+
+p::first-letter {
+  font-size: 150%;
+  color: steelblue;
+  font-family: cursive;
+}
+
+p::first-line {
+  font-style: italic;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+p {
+  font-size: 150%;
+}
+
+#pringles {
+  letter-spacing: 10px;
+  color: red;
+  font-family: fantasy;
+}
+.mustache {
+  width: 180px;
+  height: 180px;
+  color: steelblue;
+  position: absolute;
+  border-radius: 50%;
+  top: 150px;
+  left: 130px;
+  box-shadow:
+    150px 240px 0 0 currentColor,
+    300px 240px 0 0 currentColor;
+}
+
+.mustache::before {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 85px;
+  left: 5px;
+  content: "";
+  border-bottom: solid 180px currentColor;
+  border-radius: 0 0 0 100%;
+  transform: rotate(-60deg);
+  transform-origin: 210px;
+}
+
+.mustache::after {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 85px;
+  left: 385px;
+  content: "";
+  border-bottom: solid 180px currentColor;
+  border-radius: 0 0 100% 0;
+  transform: rotate(60deg);
+  transform-origin: left 230px;
+}
+
+.mickey {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  color: black;
+  top: 50px;
+  left: 800px;
+  border-radius: 100%;
+  box-shadow:
+    150px 150px 0 0 currentColor,
+    350px 150px 0 0 currentColor;
+}
+
+.mickey::before {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 200px;
+  left: 198px;
+  content: "";
+  background-color: black;
+  border-radius: 100%;
+}
+
+.mickey::after {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 280px;
+  left: 265px;
+  content: "";
+  background-color: green;
+  border-radius: 100%;
+  box-shadow:
+    -30px -50px 0 -20px white,
+    30px -50px 0 -20px white;
+}
+
+.mouth {
+  width: 90px;
+  height: 90px;
+  color: red;
+  position: absolute;
+  border-bottom: solid 10px currentColor;
+  border-radius: 30%;
+  top: 330px;
+  left: 1055px;
+}
